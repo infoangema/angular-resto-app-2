@@ -1,0 +1,98 @@
+<app-header></app-header>
+
+
+
+
+
+
+<ion-content color="medium">
+
+    <ion-list color="dark" class="ion-no-padding">
+        <ion-item color="dark">
+            <ion-label color="light">Entradas</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-slides class="slide-full" [options]="slidesOpt">
+        <ion-slide *ngFor="let slide of slides">
+            <ion-card mode="ios" color="medium">
+                <img [src]="slide.img" class="slide-image" />
+                <ion-card-header class="tituloPlato">
+                    <ion-text class="tituloPlato">{{slide.titulo}}</ion-text>
+                </ion-card-header>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-button expand="block" size="small">
+                            Agregar
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col size="6" class="ion-padding">
+                        <ion-text>${{slide.precio}}</ion-text>
+                    </ion-col>
+                </ion-row>
+
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-list color="dark" class="ion-no-padding">
+        <ion-item color="dark">
+            <ion-label color="light">Plato Principal</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-slides class="slide-full" [options]="slidesOpt">
+        <ion-slide *ngFor="let slide of slides">
+            <ion-card mode="ios" color="medium">
+                <img [src]="slide.img" class="slide-image" />
+                <ion-card-header class="tituloPlato">
+                    <ion-text class="tituloPlato">{{slide.titulo}}</ion-text>
+                </ion-card-header>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-button expand="block" size="small">
+                            Agregar
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col size="6" class="ion-padding">
+                        <ion-text>${{slide.precio}}</ion-text>
+                    </ion-col>
+                </ion-row>
+
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-list color="dark" class="ion-no-padding">
+        <ion-item color="dark">
+            <ion-label color="light">Bebidas</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-slides class="slide-full" [options]="slidesOpt">
+        <ion-slide *ngFor="let slide of slides">
+            <ion-card mode="ios" color="medium">
+                <img [src]="slide.img" class="slide-image" />
+                <ion-card-header class="tituloPlato">
+                    <ion-text class="tituloPlato">{{slide.titulo}}</ion-text>
+                </ion-card-header>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-button expand="block" size="small">
+                            Agregar
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col size="6" class="ion-padding">
+                        <ion-text>${{slide.precio}}</ion-text>
+                    </ion-col>
+                </ion-row>
+
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+.slide-full {
+    height: 30% !important;
+}
+
+ion-card {
+    overflow: unset !important;
+}
+
+ion-card {
+    height: auto;
+    width: 200px;
+}
+
+.slide-image {
+    width: 180px;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+}
+
+ion-card-header {
+    position: relative;
+}
+
+ion-card-content {
+    position: relative;
+}
+
+.avatar {
+    width: 50px;
+}
+
+.tituloPlato {
+    text-align: left !important;
+    padding-bottom: 0px !important;
+    height: 50px;
+}
