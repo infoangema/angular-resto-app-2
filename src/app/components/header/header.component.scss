@@ -6,9 +6,18 @@
     padding: 0;
     top: 0px;
     left: 0px;
-    display: block;
 }
 
-ion-header {
-    height: 200px;
+.tamañoBoton {
+    width: 70px !important;
+    height: 70px !important;
+    margin: 20px !important;
+}
+
+.tamañoToolBarHeader {
+    height: 150px;
+}
+
+.tamañoBotonHeader {
+    height: 90px !important;
 }

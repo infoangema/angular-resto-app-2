@@ -11,7 +11,7 @@ export class InicioPage implements OnInit {
 
   slidesOpt= {
 
-    slidesPerView:2.3,
+    slidesPerView:2.2,
 
   };
 

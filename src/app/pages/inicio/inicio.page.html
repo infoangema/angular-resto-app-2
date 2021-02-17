@@ -1,10 +1,35 @@
-<app-header></app-header>
-
-
-
-
-
 <ion-content color="medium">
+
+    <app-header></app-header>
+
+
+    <div class="menuOpcionesHeader">
+
+        <div class="colorCuadrado">
+            <ion-buttons class="ion-padding">
+                <ion-button class="tamañoBotonHeader">
+                    <img src="../assets/icon/manosCirculo.png" class="tamañoBoton">
+                </ion-button>
+
+
+
+                <ion-button class="tamañoBotonHeader" slot="end">
+                    <img src="../assets/icon/carritoCirculo.png" class="tamañoBoton">
+                </ion-button>
+            </ion-buttons>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------->
+
 
     <ion-list color="dark" class="ion-no-padding">
         <ion-item color="dark">
@@ -88,6 +113,7 @@
             </ion-col>
         </ion-item>
     </ion-list>
+
 
     <ion-slides class="slide-full" [options]="slidesOpt">
         <ion-slide *ngFor="let slide of slides">
