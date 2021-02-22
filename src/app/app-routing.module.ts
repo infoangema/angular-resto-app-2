@@ -26,6 +26,30 @@ const routes: Routes = [
     path: 'descripcion-producto',
     loadChildren: () => import('./pages/descripcion-producto/descripcion-producto.module').then( m => m.DescripcionProductoPageModule)
   },
+  {
+    path: 'llamar-mozo',
+    loadChildren: () => import('./pages/llamar-mozo/llamar-mozo.module').then( m => m.LlamarMozoPageModule)
+  },
+  {
+    path: 'confirmar-pedido',
+    loadChildren: () => import('./pages/confirmar-pedido/confirmar-pedido.module').then( m => m.ConfirmarPedidoPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'boton-confirmar',
+    loadChildren: () => import('./pages/boton-confirmar/boton-confirmar.module').then( m => m.BotonConfirmarPageModule)
+  },
+  {
+    path: 'lista-productos',
+    loadChildren: () => import('./pages/lista-productos/lista-productos.module').then( m => m.ListaProductosPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
  
 
 ];

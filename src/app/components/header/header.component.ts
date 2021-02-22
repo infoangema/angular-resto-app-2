@@ -17,6 +17,10 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  onSearchChange( event ) {
+    
+  }
+
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtr.create({
       header: 'Albums',
@@ -28,7 +32,7 @@ export class HeaderComponent implements OnInit {
           console.log('Delete clicked');
         }
       }, {
-        text: 'Login',
+        text: 'Registrate',
         icon: 'log-in-outline',
         handler: () => {
           console.log('Share clicked');
@@ -56,6 +60,8 @@ export class HeaderComponent implements OnInit {
     });
     await actionSheet.present();
   }
+
+  
 
 }
 

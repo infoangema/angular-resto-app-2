@@ -19,6 +19,7 @@ ion-card {
     margin-right: auto;
     position: relative;
     top: 0px;
+    border-radius: 0 0 10px 10px;
 }
 
 ion-card-header {
@@ -35,8 +36,11 @@ ion-card-content {
 
 .tituloPlato {
     text-align: left !important;
-    padding-bottom: 0px !important;
-    height: 50px;
+    margin: 0px !important;
+    font-size: 0.7rem !important;
+    display: block;
+    position: relative;
+    max-height: 50px !important;
 }
 
 .linea {
@@ -71,4 +75,9 @@ ion-card-content {
 .colorCuadrado {
     background-color: rgba($color: #000000, $alpha: 0.5);
     height: 100%;
+}
+
+.sc-ion-searchbar-ios-h {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }

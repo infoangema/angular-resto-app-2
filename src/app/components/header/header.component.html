@@ -4,7 +4,12 @@
         <ion-buttons slot="start">
 
             <ion-back-button defaultHref="/" color="primary" mode="md"></ion-back-button>
+
         </ion-buttons>
+
+        <ion-searchbar slot="start" placeholder="Buscar" animated mode="ios" inputmode="text" (ionChange)="onSearchChange ( $event )" [debounce]="250">
+        </ion-searchbar>
+
 
 
         <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" slot="end">

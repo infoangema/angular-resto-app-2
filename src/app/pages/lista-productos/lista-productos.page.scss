@@ -1,0 +1,98 @@
+.slide-full {
+    background-color: #222428;
+    ;
+}
+
+.list-md {
+    padding-top: 0px !important;
+}
+
+ion-card {
+    overflow: unset !important;
+}
+
+ion-card {
+    height: auto;
+    width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    border-radius: 0 0 10px 10px;
+}
+
+ion-card-header {
+    position: relative;
+}
+
+ion-card-content {
+    position: relative;
+}
+
+.avatar {
+    width: 50px;
+}
+
+.linea {
+    height: 1px;
+    width: auto;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.sinSombras {
+    box-shadow: none !important;
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
+.tamañoBoton {
+    width: 50% !important;
+    height: 50% !important;
+    margin: 20px !important;
+}
+
+.tamañoBotonHeader {
+    height: 10% !important;
+}
+
+.menuOpcionesHeader {
+    width: 100%;
+    height: 25%;
+    margin: 0 auto;
+    background-image: url('../../../assets/img/prego.png');
+    background-size: cover;
+}
+
+.colorCuadrado {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 100%;
+}
+
+.tituloPlato {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 90%;
+}
+
+.botonCerrar {
+    position: absolute;
+    float: right;
+    max-height: 30px;
+    border-radius: 30px;
+    top: 1%;
+    z-index: 200;
+    left: 88%;
+}
+
+.pieDescripcion {
+    position: fixed;
+    bottom: 0;
+    display: block;
+}

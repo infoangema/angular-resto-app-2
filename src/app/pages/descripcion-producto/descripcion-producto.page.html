@@ -12,7 +12,10 @@
     <ion-grid fixed>
         <ion-row>
             <ion-col size="12">
-                <ion-title class="ion-padding-top">Nachos con Queso</ion-title>
+                <ion-card-content>
+                    <ion-title class="ion-padding-top">Nachos con Queso</ion-title>
+
+                </ion-card-content>
                 <div class="linea"></div>
             </ion-col>
             <ion-col size="12">
@@ -25,11 +28,14 @@
                     $450 </ion-button>
             </ion-col>
             <ion-col size="12" class="ion-padding-top">
-                <ion-title class="ion-padding-top">Agregar adicionales</ion-title>
+                <ion-card-content>
+                    <ion-title class="ion-padding-top">Agregar adicionales</ion-title>
+
+                </ion-card-content>
                 <div class="linea"></div>
             </ion-col>
 
-            <ion-col size="12" color="dark">
+            <ion-col size="12" color="dark" size="string">
 
                 <ion-list color="dark">
                     <ion-item *ngFor="let producto of checkbox" color="dark">
@@ -44,13 +50,37 @@
             </ion-col>
 
             <ion-col size="12">
-                <ion-title class="ion-padding-top">Dejar un comentario / aclaración</ion-title>
+                <ion-card-content>
+                    <ion-title class="ion-padding-top">Agregar comentario</ion-title>
+
+                </ion-card-content>
+                <ion-title class="ion-padding-top"></ion-title>
                 <div class="linea"></div>
 
                 <ion-item>
-                    <ion-label position="floating" color="danger">Deja tu comentario</ion-label>
+                    <ion-label position="floating" color="danger" class="ion-padding-bottom">Deja tu comentario</ion-label>
                     <ion-textarea></ion-textarea>
                 </ion-item>
+
+
+
+
+                <ion-grid fixed>
+                    <ion-row>
+                        <ion-col size="1"></ion-col>
+
+                        <ion-col size="5">
+                            <ion-button expand="block" size="small" color="danger">
+                                Aceptar </ion-button>
+                        </ion-col>
+                        <ion-col size="5">
+                            <ion-button expand="block" size="small" color="light" routerLink="/tabs/menu">
+                                Cancelar </ion-button>
+                        </ion-col>
+                        <ion-col size="1"></ion-col>
+
+                    </ion-row>
+                </ion-grid>
 
 
 
@@ -59,6 +89,9 @@
 
         </ion-row>
     </ion-grid>
+
+    <div class="bloqueInferior"></div>
+
 
 
 </ion-content>

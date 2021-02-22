@@ -12,6 +12,18 @@ const routes: Routes = [
       {
         path:'menu',
         loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
+      },
+      {
+        path:'mozo',
+        loadChildren: () => import('../llamar-mozo/llamar-mozo.module').then(m => m.LlamarMozoPageModule)
+      },
+      {
+        path:'confirmar',
+        loadChildren: () => import('../boton-confirmar/boton-confirmar.module').then(m => m.BotonConfirmarPageModule)
+      },
+      {
+        path:'carrito',
+        loadChildren: () => import('../lista-productos/lista-productos.module').then(m => m.ListaProductosPageModule)
       }
     ]
   }

@@ -1,0 +1,41 @@
+.menuOpcionesHeader {
+    width: 100%;
+    height: 25%;
+    margin: 0 auto;
+    background-image: url('../../../assets/img/logoEnRegistro.jpg');
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+}
+
+.linea {
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.list-md {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.linea {
+    height: 1px;
+    width: auto;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.caja {
+    padding: 0% !important;
+    margin: 0% !important;
+    width: 100%;
+    background-color: #222428;
+}
+
+.bloqueInferior {
+    width: 100%;
+    height: 5%;
+    background-color: #727171;
+}
