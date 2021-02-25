@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
+import { PagarCuentaPageRoutingModule } from './pagar-cuenta-routing.module';
 
-import { TabsPage } from './tabs.page';
+import { PagarCuentaPage } from './pagar-cuenta.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,10 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule,
+    PagarCuentaPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [TabsPage],
-
+  declarations: [PagarCuentaPage,]
 })
-export class TabsPageModule {}
+export class PagarCuentaPageModule {}

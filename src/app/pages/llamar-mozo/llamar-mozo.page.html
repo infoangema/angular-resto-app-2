@@ -20,18 +20,27 @@
                         <ion-text color="light" class="centrarTexto">
                             <img src="../../../assets/icon/mozo.png" class="iconoMensaje">
 
-                            <h1>Un mozo está yendo a tu mesa.</h1>
+                            <h1>¿Quiere llamar a un mozo?</h1>
                         </ion-text>
                     </ion-col>
                 </ion-row>
 
-                <ion-row>
-                    <div class="botonRegistrar">
-                        <ion-button routerLink="/tabs/menu" expand="undefined" color="danger" fill="solid" class="botonVolver">
-                            Volver
-                        </ion-button>
-                    </div>
-                </ion-row>
+                <ion-grid>
+                    <ion-row>
+
+                        <ion-col size="6">
+                            <ion-button (click)="presentAlert()" color="danger" routerLink="/tabs/menu" expand="block" color="danger">
+                                Si
+                            </ion-button>
+                        </ion-col>
+                        <ion-col size="6">
+                            <ion-button color="danger" routerLink="/tabs/menu" expand="block" color="light">
+                                No
+                            </ion-button>
+                        </ion-col>
+
+                    </ion-row>
+                </ion-grid>
 
 
 

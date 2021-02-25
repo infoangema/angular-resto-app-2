@@ -13,12 +13,15 @@
             <ion-buttons class="ion-padding">
                 <ion-button class="tamañoBotonHeader" routerLink="/llamar-mozo">
                     <img src="../assets/icon/manosCirculo.png" class="tamañoBoton">
+                    <B>LLAMAR MOZO</B>
+
                 </ion-button>
 
 
 
-                <ion-button class="tamañoBotonHeader" slot="end">
-                    <img src="../assets/icon/carritoCirculo.png" class="tamañoBoton">
+                <ion-button class="tamañoBotonHeader" slot="end" routerLink="/descuentos">
+                    <img src="../assets/icon/carritoCirculo.png" class="tamañoBoton"><br>
+                    <B>DESCUENTOS</B>
                 </ion-button>
             </ion-buttons>
 
@@ -27,7 +30,6 @@
         </div>
 
     </div>
-
 
 
 
@@ -89,12 +91,30 @@
                 </ion-grid>
             </ion-card>
         </ion-item>
-
-
-
-
-
     </ion-list>
+
+
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12">
+                <ion-title>Total: $1290</ion-title>
+
+            </ion-col>
+            <ion-col size="12">
+                <div class="linea"></div>
+            </ion-col>
+            <ion-col size="12">
+
+                <ion-button routerLink="/pagar-cuenta" expand="block" shape="round" color="danger" class="ion-padding-horizontal">
+                    Pedir Cuenta
+                </ion-button>
+            </ion-col>
+
+
+
+        </ion-row>
+    </ion-grid>
 
 
 

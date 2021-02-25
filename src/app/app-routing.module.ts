@@ -50,6 +50,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'pagar-cuenta',
+    loadChildren: () => import('./pages/pagar-cuenta/pagar-cuenta.module').then( m => m.PagarCuentaPageModule)
+  },
+  {
+    path: 'descuentos',
+    loadChildren: () => import('./pages/descuentos/descuentos.module').then( m => m.DescuentosPageModule)
+  },
  
 
 ];

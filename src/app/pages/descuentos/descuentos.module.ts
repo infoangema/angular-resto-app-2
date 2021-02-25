@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
+import { DescuentosPageRoutingModule } from './descuentos-routing.module';
 
-import { TabsPage } from './tabs.page';
+import { DescuentosPage } from './descuentos.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,10 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule,
+    DescuentosPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [TabsPage],
-
+  declarations: [DescuentosPage]
 })
-export class TabsPageModule {}
+export class DescuentosPageModule {}

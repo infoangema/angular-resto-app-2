@@ -54,8 +54,9 @@ ion-card-content {
 
 .tamañoBoton {
     width: 50% !important;
-    height: 50% !important;
+    height: 60% !important;
     margin: 20px !important;
+    padding-bottom: 20px;
 }
 
 .tamañoBotonHeader {
@@ -94,5 +95,11 @@ ion-card-content {
 .pieDescripcion {
     position: fixed;
     bottom: 0;
+    display: block;
+}
+
+.tamañoBotonHeader b {
+    position: absolute;
+    top: 80%;
     display: block;
 }

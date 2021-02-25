@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PickerController } from '@ionic/angular';
 
 
 
@@ -9,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./descripcion-producto.page.scss'],
 })
 export class DescripcionProductoPage implements OnInit {
+
+  cantidad ="";
 
 
   checkbox: { nombre: string, precio: number}[] = [
@@ -42,9 +45,42 @@ export class DescripcionProductoPage implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor( public _pickerCtrl:PickerController) { }
 
   ngOnInit() {
   }
+
+  async mostrarCantidad(){
+    const picker = await this._pickerCtrl.create({
+      columns: [{
+        name:'Cantidad de producto',
+        options:[
+          {text:'Cantidad: 2', value:2},
+          {text:'Cantidad: 3', value:3},
+          {text:'Cantidad: 4', value:4},
+          {text:'Cantidad: 5', value:5},
+        ]
+      }],
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel'
+        },
+        {
+          text: 'Aceptar',
+          handler: (value) => {
+            console.log(`Got Value ${value}`);
+            
+
+          }
+        }
+      ]
+    });
+
+    await picker.present();
+
+  }
+
+  
 
 }

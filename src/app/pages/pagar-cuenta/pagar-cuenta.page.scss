@@ -1,0 +1,40 @@
+ion-list {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+.marginTop {
+    padding-top: 4%;
+    background-color: #222428;
+}
+
+.colorCuadrado {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 100%;
+}
+
+.menuOpcionesHeader {
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+    background-image: url('../../../assets/img/prego.png');
+    background-size: cover;
+}
+
+.tamañoBotonHeader {
+    height: 10% !important;
+}
+
+.tamañoBotonHeader b {
+    position: absolute;
+    top: 80%;
+    display: block;
+}
+
+.tamañoBoton {
+    width: 50% !important;
+    height: 60% !important;
+    margin: 20px !important;
+    padding-bottom: 20px;
+}
